@@ -16,7 +16,7 @@ require (
 	github.com/pingcap/kvproto v0.0.0-20191011042334-8ee4fd8fb4ca
 	github.com/pingcap/log v0.0.0-20190307075452-bd41d9273596
 	github.com/pingcap/parser v0.0.0-20190910041007-2a177b291004
-	github.com/pingcap/tidb v3.0.4+incompatible
+	github.com/pingcap/tidb v1.1.0-beta.0.20190929123532-694e086e7914
 	github.com/pingcap/tidb-tools v3.0.4+incompatible
 	github.com/prometheus/client_golang v1.1.0
 	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
@@ -26,9 +26,6 @@ require (
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
 	golang.org/x/text v0.3.2
 	google.golang.org/grpc v1.21.4
-	gopkg.in/stretchr/testify.v1 v1.4.0 // indirect
+	gopkg.in/stretchr/testify.v1 v1.2.2 // indirect
 	modernc.org/mathutil v1.0.0
 )
-
-// fix build failure on Go 1.13
-replace gopkg.in/stretchr/testify.v1 v1.4.0 => github.com/stretchr/testify v1.4.0
